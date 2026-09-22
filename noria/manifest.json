@@ -1,0 +1,113 @@
+{
+  "images": [
+    {
+      "sha256": "5e66c0e82a6f7b8bc3c84549f4df8b341a47e37e1ff8c8e21722719140dbd012",
+      "path": "images/01.png",
+      "label": "当前：主页天气",
+      "number": 1,
+      "bytes": 13970
+    },
+    {
+      "sha256": "fdbe4967f0222576251fee69a398628b4839d20e6950c7628354b8922ca19fb7",
+      "path": "images/02.png",
+      "label": "当前：主页工具栏",
+      "number": 2,
+      "bytes": 7484
+    },
+    {
+      "sha256": "92a0e9fd51894748244d17d65c229fcb848879e56f9cff224b68804c499379a3",
+      "path": "images/03.png",
+      "label": "当前：倒计时",
+      "number": 3,
+      "bytes": 28860
+    },
+    {
+      "sha256": "afc74cc3fa0700a5fd083951b789253d86fe673be3cac8d13a74ad850f9aebc3",
+      "path": "images/04.png",
+      "label": "当前：倒计时拖动遮挡",
+      "number": 4,
+      "bytes": 35812
+    },
+    {
+      "sha256": "d148c6adb5b3cf0087caee7023fc9d708af3153f27c726d5b4c23755c873e96f",
+      "path": "images/05.png",
+      "label": "当前：记录控件",
+      "number": 5,
+      "bytes": 5558
+    },
+    {
+      "sha256": "802d9ce6207182be0625c0b06913d592fa6c17256ba753adc50fa68f057c6595",
+      "path": "images/06.png",
+      "label": "当前：记录统计",
+      "number": 6,
+      "bytes": 15138
+    },
+    {
+      "sha256": "8a7fae70d9347c709f84add87f43138904f5d4dd61f73046508f545ce1bd92b4",
+      "path": "images/07.jpg",
+      "label": "参考：统计样式",
+      "number": 7,
+      "bytes": 2327359
+    },
+    {
+      "sha256": "1ee4eb21d72bff533f2a7585f871e5c67496a7e9a24847732e286f5b82d30fea",
+      "path": "images/08.png",
+      "label": "参考：习惯行",
+      "number": 8,
+      "bytes": 73154
+    },
+    {
+      "sha256": "618c74e242d1395f68bec0b8f8e37250700a050cf196796d3539f320ec89444d",
+      "path": "images/09.png",
+      "label": "参考：习惯配色与进度",
+      "number": 9,
+      "bytes": 106946
+    },
+    {
+      "sha256": "18fd9fc5fe13f260260c653fadb100cfac43e1edcfac578868169e38ae7e1a8d",
+      "path": "images/10.png",
+      "label": "参考：时间记录",
+      "number": 10,
+      "bytes": 77880
+    },
+    {
+      "sha256": "2a03a21ad378f499fa074553bebff2adc469eda2f4e84b755097f2c6ed16e851",
+      "path": "images/11.png",
+      "label": "参考：日期分组记录",
+      "number": 11,
+      "bytes": 148133
+    },
+    {
+      "sha256": "ea2f0195805083b77183d7bdd7922bf2c4902b52d65e318ecfa606ca6890055d",
+      "path": "images/12.png",
+      "label": "参考：日期条",
+      "number": 12,
+      "bytes": 17943
+    },
+    {
+      "sha256": "053b3a8f752bb82e7f49ba016e16c1878f2c5f2ad3164003d22f6f63d87ecd78",
+      "path": "images/13.png",
+      "label": "参考：竖向 Timeline",
+      "number": 13,
+      "bytes": 142019
+    }
+  ],
+  "preparedAt": "2026-09-22T13:05:44.4563341+08:00",
+  "phase": "read-only-design-review",
+  "code": {
+    "root": "code/",
+    "snapshotSha256": "6b977ec0a7ce263d32df056731fc3a1232fd5d2466514f673dfdd2fc4503e54e",
+    "files": 287,
+    "baseCommit": "4e613ba781c68181b1ceacda68680b5542a3c7b6",
+    "includesUncommittedWork": true,
+    "tests": {
+      "pass": 1048,
+      "fail": 0
+    }
+  },
+  "repository": "jellyns/gpt-collab",
+  "visibility": "public",
+  "output": "Return full Markdown in the Pro conversation; no repository writes.",
+  "projectRoot": "noria/",
+  "pathBase": "noria/"
+}
