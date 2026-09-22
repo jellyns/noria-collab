@@ -1,9 +1,5 @@
-## 首次协作测试提示词
+请读取公开仓库 https://github.com/jellyns/noria-collab 的 README.md，并按 inputs/review-prompt.md 完成 Noria 界面与交互评审。
 
-私有仓库已确定为 `jellyns/noria-collab`，本包置于仓库根目录。使用前需确认 Pro 的 GitHub 连接获准访问该仓库。
+以本仓库 code/ 中的当前代码快照、用户原文、后续澄清及 13 张原图为依据；不要使用 obsidian-noria 旧 main 代替当前代码。先梳理页面与内容结构，再提出具体交互、视觉及分批实施建议，区分用户要求和你提出的新方案。
 
-请读取 GitHub 私有仓库 `jellyns/noria-collab` 的 `README.md`，这次只执行其中的“第一轮只验证协作”。分别验证你能否读取需求文档、实际看见原图、把测试文档写回指定 outputs 路径。报告真实工具能力；若写入成功，返回文件链接与提交 SHA；若只能读取，就在对话里返回结果。不要修改公开代码，不开始完整界面评审。
-
-## 完整评审提示词（测试通过、代码版本固定后）
-
-请读取 GitHub 私有仓库 `jellyns/noria-collab` 的 `README.md`，按 `inputs/review-prompt.md` 评审 Noria。以 manifest 指定的代码版本、用户原文、全部原图和后续澄清为依据，区分用户要求与讨论建议。将结果保存到 `outputs/ui-review-01.md` 并返回链接和提交 SHA；没有写入工具时在对话输出完整 Markdown。先讨论修改方案，不改插件代码。未实际读取的材料或无法查看的图片必须明确说明。
+这次只读，不创建分支、不提交文件、不改代码。请在对话中输出完整 Markdown 建议。明确说明实际读取的代码版本和未能查看的图片，不要把文本转述当作看过原图。

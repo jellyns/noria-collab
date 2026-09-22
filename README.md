@@ -1,27 +1,22 @@
-# Noria 界面协作材料
+# Noria 界面评审入口
 
-用途：私有仓库 jellyns/noria-collab 的首轮协作能力验证。代码工作区尚未形成新的提交，本材料包先用于协作能力验证，不能把旧 HEAD 当成截图对应的完整实现。
+本仓库由用户于 2026-09-22 明确批准临时公开，供 Pro 读取。当前流程是：Pro 只读评审并在对话中返回建议 → Codex 保存结果并与用户讨论 → 按确认范围修改插件。不要尝试创建分支、提交文件或修改代码。此前私有读取/写入测试材料仅是历史背景，不再执行。
 
-## 阅读入口
+## 本轮材料
 
-1. `inputs/user-request.md`：用户本轮原始需求和后续澄清。
-2. `inputs/discussion.md`：已核对背景、用户要求、助手建议及未定事项；它是讨论稿，不代表全部方案已获批准。
-3. `inputs/images.md` 与 `images/`：13 张原图及其编号，保留原分辨率，不把转述当作看过图。
-4. `inputs/review-prompt.md`：完整评审任务草稿，能力验证通过且代码版本固定后再执行。
-5. `manifest.json`：原图哈希和代码工作区基线状态。
+1. [用户原始需求与后续澄清](inputs/user-request.md)。
+2. [13 张原图索引](inputs/images.md)：前 6 张为当前界面，后 7 张为参考图，原分辨率保存在 images/。
+3. [讨论背景](inputs/discussion.md)：区分用户明确要求、助手建议与待定事项。
+4. [完整评审任务](inputs/review-prompt.md)。
+5. [当前代码快照](code/)：含未提交的最新实现。主要入口为 code/src/main.js、code/src/workbench.js、code/src/diary-workspace.js、code/src/record-fields.js、code/src/property-stat-cards.js、code/src/runtime/views/tasks-timeline/view.js 和 code/src/runtime/views/task-timeline/。
+6. [代码哈希清单](code-manifest.json) 与 [材料清单](manifest.json)。
 
-公开代码仓库为 `jellyns/obsidian-noria`。本材料应存于独立私有仓库；公开仓库中的隐藏目录、未合并分支以及不出现在 README 的目录都不构成隐私边界。
+## 代码版本与验证
 
-## 第一轮只验证协作
+code/ 是当前工作区的固定快照，不是公开插件仓库旧 main 的副本。源码快照 SHA256 为 6b977ec0a7ce263d32df056731fc3a1232fd5d2466514f673dfdd2fc4503e54e，共 287 个源码及配套文件。旧 Git 基线为 4e613ba781c68181b1ceacda68680b5542a3c7b6，不能用它代替此快照。当前源码测试为 1048 通过、0 失败；本轮新方案尚未实现。
 
-分别验证读取 Markdown、实际查看原图、写回 Markdown。读取入口成功并不证明能看图或写文件。
+评审请读取本仓库 code/，不要直接使用 jellyns/obsidian-noria 的旧 main 判断截图对应实现。图像无法实际查看时必须说明，不得用文件名或需求描述代替视觉检查。
 
-读取 `inputs/read-probe.txt` 并报告其中校验短语。尝试实际打开原图 04 和 09，说明通过什么工具取得图像及所见细节；如果工具只能读取文字或文件名，明确报告无法查看图像。不要以需求文档转述作为视觉验证。
+## 输出与后续清理
 
-如果当前会话提供仓库写文件能力，只在本私有仓库的 `outputs/capability-probe.md` 新建本次测试结果，记录三项能力、当前工具/模式、实际读取的仓库版本；返回可核验的文件链接和提交 SHA。不要修改 inputs、图片或公开代码。没有写入工具时，直接在对话中返回结果并说明未写入，不能声称已经保存。
-
-## 评审与结果回传
-
-能力测试通过后，先固定代码版本并更新 manifest，再开始完整评审。结果写到 `outputs/ui-review-01.md`，后续轮次使用新文件；包含所读代码 SHA、参考材料版本、主要问题、方案和待决事项。外部模型建议不自动等于实施授权。
-
-若 Pro 只能读取，评审仍可在其对话里完成，文档由 Codex 收回并保存。若不能查看私有仓库里的图片，还需通过受支持的附件通道补图；在验证前不能承诺以后只发一段提示词就能完成全部工作。
+完整建议在 Pro 对话中输出 Markdown，由 Codex 收回、保留到本地 Noria 项目，再继续讨论。无需写入 GitHub。用户要求在评审和相关任务基本完成后删除这个临时仓库；清理前先确保建议和所需材料已保存在本地，不以 Pro 已读取一项就提前删除。

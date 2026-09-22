@@ -93,15 +93,19 @@
     }
   ],
   "preparedAt": "2026-09-22T13:05:44.4563341+08:00",
-  "phase": "capability-probe",
+  "phase": "read-only-design-review",
   "code": {
-    "untrackedEntries": 102,
-    "localBaseCommit": "4e613ba781c68181b1ceacda68680b5542a3c7b6",
-    "trackedChanged": 74,
-    "repository": "jellyns/obsidian-noria",
-    "note": "The local base commit does not include the current UI work. Full code review waits for a fixed checkpoint.",
-    "reviewCommit": null,
-    "worktreeHasUncommittedChanges": true
+    "root": "code/",
+    "snapshotSha256": "6b977ec0a7ce263d32df056731fc3a1232fd5d2466514f673dfdd2fc4503e54e",
+    "files": 287,
+    "baseCommit": "4e613ba781c68181b1ceacda68680b5542a3c7b6",
+    "includesUncommittedWork": true,
+    "tests": {
+      "pass": 1048,
+      "fail": 0
+    }
   },
-  "privateRepository": "jellyns/noria-collab"
+  "repository": "jellyns/noria-collab",
+  "visibility": "public",
+  "output": "Return full Markdown in the Pro conversation; no repository writes."
 }
